@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= injection.title %></title>
+</head>
+<body>
+<img height="200px" width="100%"  src="http://<%= injection.httpHost + '/public/img/node.svg' %>" alt="node">
+
+
+<form name="publish" >
+    <input type="text" name="message"/>
+    <input type="submit" value="Отправить"/>
+</form>
+<div id="subscribe"></div>
+
+
+<div id="info" style="position: absolute; top: 0; right: 0; background: white; z-index: 102; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);padding: 10px; margin: 10px"></div>
+<div id='moduleChat'>
+    <div class="div" get-popover>
+        222
+        <div popover><span></span>fdfdfdf</div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="div" get-popover>
+        444
+        <div popover>
+            <div>
+                asdasdasd
+                <div>
+                    asdasdasd
+                </div>
+                <div>
+                    asdasdasd
+                    <div>
+                        asdasdasd
+                    </div>
+                    <div>
+                        asdasdasd
+                    </div>
+                    <div>
+                        asdasdasd
+                    </div>
+                    <div>
+                        asdasdasd
+                        <div>
+                            asdasdasd
+                        </div>
+                        <div>
+                            asdasdasd
+                        </div>
+                        <div>
+                            asdasdasd
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                asdasdasd
+            </div>
+            <div>
+                asdasdasd
+            </div>
+            <div>
+                asdasdasd
+            </div>
+        </div>
+    </div>
+
+
+    <div>open</div>
+    <button type="button" class="btn"><i class="fa fa-refresh fa-spin"></i> Default</button>
+    <button type="button" class="btn btn-danger"></button>
+    <button type="button" class="btn btn-primary">Кнопка</button>
+    <button type="button" class="btn btn-success" get-popover>
+        <a class="text-link"></a>
+        <div popover>asdddsasdasd</div>
+    </button>
+
+    <button type="button" class="btn btn-info"></button>
+    <button type="button" class="btn btn-warning"></button>
+    <button type="button" class="btn btn-disabled"><i class="fa fa-pencil"></i></button>
+    <button type="button" class="btn btn-danger-o"></button>
+    <button type="button" class="btn btn-link"></button>
+    <div class="hshadow">class hshadow</div>
+    <span class="btn btn-close"></span>
+    <span class="btn btn-ok"></span>
+    <span class="btn btn-send"></span>
+    <div class="btn-close-o btnriples">
+        <i class="fa fa-times"></i>
+    </div>
+    <span class="btn btn-scrollup"></span>
+    <p>This is a link  <a class="text-link"><i class="fa fa-refresh fa-spin"></i> ответ</a></p>
+    <!-- Nav tabs -->
+    <ul class='nav nav-tabs' role='tablist'>
+        <li role='presentation' class='active' data-toggle='tooltip' title='Глобальный чат. Ваше сообщение увидят все участники чата.'>
+            <a href='#chat' aria-controls='chat' role='tab' data-toggle='tab'>
+                <span class='glyphicon glyphicon-globe' aria-hidden='true'></span>
+        </a>
+        </li>
+        <li role='presentation' data-toggle='tooltip' title='Ваши личные сообщения. Как отправленные так и полученные.'>
+            <a href='#chatself' aria-controls='chatself' role='tab' data-toggle='tab'>
+                <span class='glyphicon glyphicon-comment' aria-hidden='true'></span>
+            </a>
+        </li>
+        <li role='presentation' data-toggle='tooltip' title='Раздел настроек работы чата'>
+            <a href='#chatoption' aria-controls='chatoption' role='tab' data-toggle='tab'>
+                <span class='glyphicon glyphicon-cog' aria-hidden='true'></span>
+            </a>
+        </li>
+        <li role="presentation" data-toggle="tooltip" title="Здесь находятся все ваши напоминания.">
+            <a
+                    href='#chatreminder'
+                    aria-controls='chatreminder'
+                    role='tab'
+                    data-toggle='tab'
+            ><span class='glyphicon glyphicon-bell' aria-hidden='true'></span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="chat">
+            <div class="well">
+                Чат
+                <button type="button"
+                        data-original-title="
+                        <div style='font-size: 20px; color: rgba(91, 192, 222, 1);'>
+                            <span style='margin: 10px;' class='glyphicon glyphicon-info-sign' aria-hidden='true'></span>
+                            <span style='margin: 10px;'>Info</span>
+                        </div>"
+                        class="btn btn-default"
+                        data-toggle="popover_hover_info"
+                        data-content=" augue laoreet rutrum faucibus.">
+                    Popover on right
+                </button>
+                <button type="button"
+                        data-original-title="
+                        <div style='font-size: 20px; color: rgba(217,83,79,1);'>
+                            <span style='margin: 10px;' class='glyphicon glyphicon-info-sign' aria-hidden='true'></span>
+                            <span style='margin: 10px;'>Danger</span>
+                        </div>"
+                        class="btn btn-default"
+                        data-toggle="popover_hover_danger"
+                        data-content="asd">
+                    Popover on right
+                </button>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="chatself">
+            <div class="well">
+                Личное
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="chatoption">
+            <div class="well">
+                Настройки
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="chatreminder">
+            <div class="well">
+                Напоминания
+            </div>
+        </div>
+    </div>
+    <i class="fa fa-lg fa-cogs"></i>
+    <div class="div" get-popover>
+        222
+        <div popover>fdfdfdf</div>
+    </div>
+</div>
+<link href="http://<%= injection.httpHost + '/public/css/mymain.css' %>" rel='stylesheet' type='text/css'>
+
+<link href="http://<%= injection.httpHost + '/public/fonts/roboto/roboto.css' %>" rel='stylesheet' type='text/css'>
+
+<link href="http://<%= injection.httpHost + '/public/fonts/fontawesome/font-awesome.css' %>"  rel='stylesheet' type='text/css'>
+
+<script src="http://<%= injection.httpHost + '/public/js/jquery.min.js' %>"></script>
+<script src="http://<%= injection.httpHost + '/public/js/mymain.js' %>"></script>
+
+<script src="http://<%= injection.httpHost + '/public/js/wsclient.js' %>"></script>
+<audio id='messageIn' autoplay controls src="http://<%= injection.httpHost + '/public/sound/Ringtones.mp3' %>" />
+
+
+
+</body>
+</html>
